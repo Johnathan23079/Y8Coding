@@ -1,0 +1,122 @@
+<!-- Author: Johnathan Lee -->
+<!-- School: Upper Canada College -->
+<!-- This program will help others learn about names -->
+<!-- Open with FireFox for best results -->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<h1>
+		Name Website 
+	</h1>
+	
+	<link rel="shortcut icon" href="file:///Users/johnathan.lee/Desktop/Year 8 coding/favicon.ico/" type="image/x-icon">
+	<meta charset="utf-8">
+
+	<title> Name Website</title>
+
+	<style>
+	h1{
+		font-size: 56px;
+		font-family: monospace;
+		text-align: center;
+		background-color: blue;
+		border-width: 5px;
+		border-color: navy;
+	}
+	p{
+		 font-size: 18px;
+		 font-family: sans-serif;
+		text-align: center;
+		border: solid;
+		border-color: black;
+		border-width: 2px;
+
+	}
+	
+  body{
+	border-width: 10px;
+  background-color: grey;
+  text-align: center;
+  height: fit-content;
+}
+	footer {
+  background-color: #777;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: fit-content;
+  
+
+}
+  article {
+  padding: 100px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 80%; 
+
+</style>
+
+</head>
+<div>
+            <button id="button1" style="border-style: solid;">Johnathan</button>&nbsp;
+            <button id="button2" style="border-style: solid;">Lee</button>&nbsp;
+           
+</div>
+
+<body>
+
+	<h2 id="name" >Title will be displyed here</h2>
+	<div></div>
+        <p id="info" >Information will be displayed here</p>
+        </div>
+        <p id="info2">Information will be displayed here also</p>	
+
+        <h6> image will be displayed below</h6>
+</body>
+
+<article>
+
+
+<img id= "image" src="favicon.ico">
+</article>
+
+<footer>
+
+  <h3>Footnotes</h3>
+  <h4>Code Written by Johnathan Lee</h4>
+  <h4>Why Names Are Important?</h4>
+  <h5>Names are an important part of human society and they help define the orgins of people. This website is a resource to learn about names and to promote pluralism at UCC.</h5>
+  <h5>Links</h5>
+<a href="http://ucc.on.ca">UCC</a>
+
+</footer>
+
+<script type="text/javascript">
+	document.getElementById("button1").onclick = function(){
+						const element = document.getElementById("name");
+            element.innerHTML = "Johnathan";
+            const info = document.getElementById("info");
+            info.innerHTML = "The name Jonathan originated from the Hebrew name יְהוֹנָתָן (Yehonatan), contracted to יוֹנָתָן (Yonatan), meaning 'Yahweh has given', derived from the roots יְהוֹ (yeho) referring to the Hebrew God and נָתַן (natan) meaning 'to give'."
+            const info2 = document.getElementById("info2");
+            info2.innerHTML = "My name was given to me by my mom beacause of its meaning. My name is spelled Johnathan instead of Jonathan because my mom thought that spelling Jon in short form was to short so she added an H."
+            var img = document.getElementById("image");
+						img.src="flag.png";
+						return false; 
+	}
+	document.getElementById("button2").onclick = function(){
+		const element = document.getElementById("name");
+            element.innerHTML = "Lee";
+            const info = document.getElementById("info");
+            info.innerHTML = " Origins: According to tradition, the Li clan is descended from the legendary emperor Zhuanxu, the grandson of the mythical Yellow Emperor. During the reign of Emperor Yao, Zhuanxu's descendant General Gao Yao served as dali or Minister of Law. During the Xia dynasty, his ancestors adopted Li 理 as their surname. There are many tales about how 理 (reason) became 李 (plum). The most common one says the minister Li Zheng was executed by King Zhou of the Shang dynasty. Li Zheng's son and wife escaped and survived by eating plums. As a sign of gratitude, his descendants thereafter adopted the surname meaning 'plum'."
+            	const info2 = document.getElementById("info2");
+           	 info2.innerHTML = "Another common spelling of Li is Lee which is how i spell it. I got this last name from my dad who's father is from China who came to Canada when he was 14 to make money for his family."
+               var img = document.getElementById("image");
+               img.src="Li.png";
+return false;
+	}
+</script>
+
+
+</html>
